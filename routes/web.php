@@ -15,9 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('kategori', function () {
-    return "halaman_kategori";
-});
+//Route::get('kategori', function () {
+//    return "halaman_kategori";
+//});
 
 Route::get('Layouts', function() {
 	return view('Layouts.master');
@@ -29,6 +29,10 @@ Route::get('Dashboard', function() {
 
 Route::get('Dashboard2', function() {
 	return view('Dashboard.dashboard');
+});
+
+Route::get('master', function() {
+	return view('Layouts.master');
 });
 
 Route::resource('kategori','KategoriController')->except(['destroy']);
