@@ -35,4 +35,8 @@ Route::get('Master', function() {
 	return view('Layouts.master');
 });
 
+Route::get('App', function() {
+	return view('Master.app');
+});
+
 Route::resource('kategori','KategoriController')->except(['destroy']);

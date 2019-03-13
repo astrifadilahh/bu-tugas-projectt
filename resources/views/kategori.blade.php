@@ -1,4 +1,4 @@
-@extends('Layouts.master')
+@extends('Master.app')
 <!DOCTYPE html>
 <html>
 <head>
