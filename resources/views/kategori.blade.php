@@ -21,11 +21,10 @@
               <table class="table table-bordered">
 				  
                 <tr>
+					<th>id</th>
 					<th>Nama Kategori</th>
-                  <!--<th style="width: 10px">#</th>
-                  <th>Nama Kategori</th>
-                  <th>Progress</th>
-                  <th style="width: 40px">Label</th>-->
+					<th>Slug</th>
+					<th>Tanggal</th>
 				</tr>
 				
 				@foreach($var_kategori as $kategori)
