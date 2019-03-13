@@ -7,7 +7,48 @@
 <body>
 
 	@section('konten')
-	<br><br><br><br><br><br>
+
+	    <!-- Main content -->
+		<section class="content">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="box">
+            <div class="box-header with-border">
+              <h3 class="box-title">Bordered Table</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table class="table table-bordered">
+				  
+                <tr>
+					<th>Nama Kategori</th>
+                  <!--<th style="width: 10px">#</th>
+                  <th>Nama Kategori</th>
+                  <th>Progress</th>
+                  <th style="width: 40px">Label</th>-->
+				</tr>
+				
+				@foreach($var_kategori as $kategori)
+                <tr>
+				
+                  <td>{{$kategori->nama_kategori}}</td>
+				</tr>
+				@endforeach
+                
+            <!-- /.box-body -->
+            <div class="box-footer clearfix">
+              <ul class="pagination pagination-sm no-margin pull-right">
+                <li><a href="#">&laquo;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.box -->
+
+	<!--<br><br><br><br><br><br>
 	<table align="center" border= "2px" style="border-color: lightgreen; color: brown">
 		<thead>
 			<tr>
@@ -31,7 +72,7 @@
 				<td>{{$kategori->created_at}}</td>
 				<td>{{$kategori->updated_at}}</td>
 			</tr>
-			@endforeach
+			@endforeach-->
 		</tbody>
 	</table>
 @endsection
