@@ -31,7 +31,7 @@ Route::get('Dashboard2', function() {
 	return view('Dashboard.dashboard');
 });
 
-Route::get('master', function() {
+Route::get('Master', function() {
 	return view('Layouts.master');
 });
 

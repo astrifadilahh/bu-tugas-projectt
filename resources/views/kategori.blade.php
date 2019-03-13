@@ -1,10 +1,13 @@
+@extends('Layouts.master')
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Kategori</title>
 </head>
 <body>
-	<br><br>
+
+	@section('konten')
+	<br><br><br><br><br><br>
 	<table align="center" border= "2px" style="border-color: lightgreen; color: brown">
 		<thead>
 			<tr>
@@ -31,7 +34,7 @@
 			@endforeach
 		</tbody>
 	</table>
-
+@endsection
 </body>
 </html>
 

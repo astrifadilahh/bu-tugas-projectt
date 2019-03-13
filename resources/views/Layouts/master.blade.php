@@ -39,7 +39,7 @@
 	</aside>
 
 	<div class="content-wrapper">
-		@yield('kategori')
+		@yield('konten')
 	</div>
 
 	<footer class="main-footer">
