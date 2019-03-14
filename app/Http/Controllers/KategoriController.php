@@ -14,11 +14,11 @@ class KategoriController extends Controller
     	dd($var_kategori);
 	}
 
-	public function search(Request $request){
+	/*public function search(Request $request){
 		$search = $request->get('search');
 		$kat = Categories::where('nama_kategori','LIKE','%'.$search.'%')->paginate(5);
 		return view('kategori', compact('kat'));
-	}
+	}*/
 
 	public function cari(Request $request){
 		$cari = $request->get('q');

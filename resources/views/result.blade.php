@@ -11,30 +11,31 @@
 		<section class="content">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">Bordered Table</h3>
-                    </div>
+                    <div class="box">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Bordered Table</h3>
+                        </div>
 
-                <div class="box-body">
-                    <table class="table table-bordered">
-				        <tr>
-							<th>id</th>
-							<th>Nama Kategori</th>
-							<th>Slug</th>
-							<th>Tanggal</th>
-						</tr>
+                    <div class="box-body">
+                        <table class="table table-bordered">
+                            <tr>
+                                <th>id</th>
+                                <th>Nama Kategori</th>
+                                <th>Slug</th>
+                                <th>Tanggal</th>
+                            </tr>
 
-						@foreach($result as $kategori)
-        				<tr>
-							<td>{{$kategori->id}}</td>
-							<td>{{$kategori->nama_kategori}}</td>
-							<td>{{$kategori->slug}}</td>
-							<td>{{$kategori->tanggal}}</td>
-						</tr>
-						@endforeach
-    
-					</table>
-          	    </div>			
+                            @foreach($result as $kategori)
+                            <tr>
+                                <td>{{$kategori->id}}</td>
+                                <td>{{$kategori->nama_kategori}}</td>
+                                <td>{{$kategori->slug}}</td>
+                                <td>{{$kategori->tanggal}}</td>
+                            </tr>
+                            @endforeach
+        
+                        </table>
+                    </div>			
     @else
     <h1>Data Tidak Ditemukan</h1>
     @endif

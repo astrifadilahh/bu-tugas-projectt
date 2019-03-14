@@ -39,11 +39,6 @@ Route::get('App', function() {
 	return view('Master.app');
 });
 
-Route::group(['middleware'=>['web']], function(){
-	Route::resource('/kategori','KategoriController');
-	Route::get('search','KategoriController@search');
-});
-
 Route::get('/search', 'KategoriController@cari')->name('post.cari');
 
 //Route::resource('kategori','KategoriController')->except(['destroy']);
