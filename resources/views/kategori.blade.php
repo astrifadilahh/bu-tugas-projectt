@@ -34,6 +34,7 @@
 									<th>Nama Kategori</th>
 									<th>Slug</th>
 									<th>Tanggal</th>
+									<th>Action</th>
 								</tr>
 				
 								@foreach($var_kategori as $kategori)
@@ -42,6 +43,13 @@
 									<td>{{$kategori->nama_kategori}}</td>
 									<td>{{$kategori->slug}}</td>
 									<td>{{$kategori->tanggal}}</td>
+									<td>
+										<button type="submit" class="btn btn-default btn-info" >
+											<a href="Edit" style="color: white">Edit</a>
+										</button> |
+										<button type="submit" class="btn btn-default btn-danger"style="color: white">Hapus
+										</button>
+									</td>
 								</tr>
 								@endforeach
 								
@@ -49,6 +57,8 @@
           	</div>			
 
 					<div class="box-footer clearfix">
+						<button type="submit" class="btn btn-default"><a href="tambah">Create New Data</button>
+						
             <ul class="pagination pagination-sm no-margin pull-right">
               <li><a href="#">&laquo;</a></li>
               <li><a href="#">1</a></li>

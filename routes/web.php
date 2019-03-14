@@ -45,3 +45,25 @@ Route::resource('kategori','KategoriController')->except(['destroy']);
 //Route::get('kategori','KategoriController@search');
 //Route::get('kategori/paginate','KategoriController@paginate');
 //Route::get('query', 'KategoriController@search');
+
+/*Route::get('Create', function(){
+	return view('create');
+});*/
+
+Route::get('/Create/tambah','HomeController@tambah');
+//Route::get('/Create/tambah','HomeController@index');
+//Route::get('Create','HomeController@index');
+
+Route::post('/Create/store','HomeController@store');
+//Route::post('/Create/insert','HomeController@insert')
+//Route::post('Create/add','HomeController@add');
+
+Route::get('/tambah', function(){
+	return view('tambah');
+});
+
+Route::get('Edit', function(){
+	return view('edit');
+});
+
+//Route::match(['get','post'], 'Create', 'HomeController@create');

@@ -41,7 +41,7 @@
     @endif
 				<div class="box-footer clearfix">
                     <ul class="pagination pagination-sm no-margin pull-left">
-                        <a href='kategori'>Back</a>
+                    <button type="submit" class="btn btn-default"><a href="kategori">Back</button>
                     </ul>
 
                     <ul class="pagination pagination-sm no-margin pull-right">
