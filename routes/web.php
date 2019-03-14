@@ -41,7 +41,7 @@ Route::get('App', function() {
 
 Route::get('/search', 'KategoriController@cari')->name('post.cari');
 
-//Route::resource('kategori','KategoriController')->except(['destroy']);
+Route::resource('kategori','KategoriController')->except(['destroy']);
 //Route::get('kategori','KategoriController@search');
 //Route::get('kategori/paginate','KategoriController@paginate');
 //Route::get('query', 'KategoriController@search');
