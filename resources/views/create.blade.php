@@ -26,7 +26,7 @@
             </div>
 
             
-            <form class="form-horizontal" action="/Create/tambah" method="post">
+            <form class="form-horizontal" action="{{route('post.store')}}" method="post">
             {{ csrf_field() }}
                 <div class="box-body">
                     <div class="form-group">

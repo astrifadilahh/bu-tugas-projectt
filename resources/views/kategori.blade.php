@@ -47,8 +47,7 @@
 										<button type="submit" class="btn btn-default btn-info" >
 											<a href="Edit" style="color: white">Edit</a>
 										</button> |
-										<button type="submit" class="btn btn-default btn-danger"style="color: white">Hapus
-										</button>
+										<button type="submit" class="btn btn-default btn-danger"style="color: white"><a href="hapuskategori/{{$kategori->id}}">Hapus</a>										</button>
 									</td>
 								</tr>
 								@endforeach
@@ -57,7 +56,7 @@
           	</div>			
 
 					<div class="box-footer clearfix">
-						<button type="submit" class="btn btn-default"><a href="tambah">Create New Data</button>
+						<button type="submit" class="btn btn-default"><a href="{{route('post.insert')}}">Create New Data</button>
 						
             <ul class="pagination pagination-sm no-margin pull-right">
               <li><a href="#">&laquo;</a></li>

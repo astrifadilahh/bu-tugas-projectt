@@ -40,30 +40,12 @@ Route::get('App', function() {
 });
 
 Route::get('/search', 'KategoriController@cari')->name('post.cari');
-
 Route::resource('kategori','KategoriController')->except(['destroy']);
-//Route::get('kategori','KategoriController@search');
-//Route::get('kategori/paginate','KategoriController@paginate');
-//Route::get('query', 'KategoriController@search');
+//Route::get('insert','KategoriController@insertform')->name('post.insert');
+//Route::post('insertdata','KategoriController@store');
 
-/*Route::get('Create', function(){
-	return view('create');
-});*/
-
-Route::get('/Create/tambah','HomeController@tambah');
-//Route::get('/Create/tambah','HomeController@index');
-//Route::get('Create','HomeController@index');
-
-Route::post('/Create/store','HomeController@store');
-//Route::post('/Create/insert','HomeController@insert')
-//Route::post('Create/add','HomeController@add');
-
-Route::get('/tambah', function(){
-	return view('tambah');
-});
-
-Route::get('Edit', function(){
-	return view('edit');
-});
-
-//Route::match(['get','post'], 'Create', 'HomeController@create');
+Route::get('tambahdata','kategoriController@addform')->name('post.insert');
+Route::post('tambahkategori','kategoriController@store');
+Route::get('hapusKategori/{id}','kategoriController@destroy');
+Route::post('updateKategori/{id}','kategoriController@update');
+Route::get('editKategori/{id}','kategoriController@editform');
